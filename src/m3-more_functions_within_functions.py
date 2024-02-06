@@ -28,6 +28,18 @@
 #   Once you have done this, then change the above _TODO_ to DONE.
 ###############################################################################
 
+def add(first_param,second_param):
+    return first_param+second_param
+
+def subtract(first_param,second_param):
+    return first_param-second_param
+     
+def multiply(first_param,second_param):
+    return first_param*second_param
+   
+def divide(first_param,second_param):
+    return first_param/second_param
+   
 ###############################################################################
 # TODO: 2. (8 pts)
 #
@@ -59,6 +71,10 @@
 #
 #   Once you have done this, then change the above _TODO_ to DONE.
 ###############################################################################
+def  main():
+    hello("Hello!")
+    input("Please input your first number {input}")
+    input2("Now input your second number {input}")
 
 ###############################################################################
 # TODO: 3. EXTRA CREDIT (4 pts)
