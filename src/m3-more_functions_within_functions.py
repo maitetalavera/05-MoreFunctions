@@ -1,5 +1,5 @@
 ###############################################################################
-# TODO: 1. (6 pts)
+# DONE: 1. (6 pts)
 #
 #   In this module, we are going to start the process of making our own
 #   calculator. It is going to be a very simple calculator, because the user
@@ -29,16 +29,20 @@
 ###############################################################################
 
 def add(first_param,second_param):
-    return first_param+second_param
+    return int(first_param)+int(second_param)
 
 def subtract(first_param,second_param):
-    return first_param-second_param
+    return int(first_param)-int(second_param)
      
 def multiply(first_param,second_param):
-    return first_param*second_param
+    return int(first_param)*int(second_param)
    
 def divide(first_param,second_param):
-    return first_param/second_param
+    return int(first_param)/int(second_param)
+
+def power(first_param,second_param):
+    return int(first_param)**int(second_param)
+    
    
 ###############################################################################
 # TODO: 2. (8 pts)
@@ -71,10 +75,23 @@ def divide(first_param,second_param):
 #
 #   Once you have done this, then change the above _TODO_ to DONE.
 ###############################################################################
+
+
 def  main():
     hello("Hello!")
-    input("Please input your first number {input}")
-    input2("Now input your second number {input}")
+    var1 = input("Enter input:")
+    var2 = input("Enter second input:")
+    print("Add:", add(var1, var2))
+    print("Subtract:",subtract(var1, var2))
+    print("Multiply:",multiply(var1, var2))
+    print("Divide:",divide(var1, var2))
+    print("Power:",power(var1, var2))
+   
+def hello(greeting):
+    print(f"{greeting}")
+
+main()
+
 
 ###############################################################################
 # TODO: 3. EXTRA CREDIT (4 pts)
